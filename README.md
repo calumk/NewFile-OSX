@@ -11,7 +11,7 @@ https://github.com/calumk/NewFile-OSX
 
 Download [Latest NewFile-OSX.zip](https://github.com/calumk/NewFile-OSX/releases/latest)
 
-To install "NewFile-OSX.app" copy it to your Applications folder, and then from the applications folder drag it into the Finder toolbar (10.9 Mavericks requires ? + ?) 
+To install "NewFile-OSX.app" copy it to your Applications folder, and then from the applications folder drag it into the Finder toolbar (10.9 Mavericks requires ⌘ + ⌥) 
 
 To use, just click on the new button and it instantly generates a new file!
 
