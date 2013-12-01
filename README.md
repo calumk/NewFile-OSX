@@ -1,7 +1,7 @@
 NewFile-OSX
 ===========
 
-<img src="https://raw.github.com/calumk/NewFile-OSX/master/logo.png" height="200px"  />
+<img src="https://raw.github.com/calumk/NewFile-OSX/master/logo.png" width="200px"  />
 
 Tiny app that sits in your Finder toolbar and makes new files for you.
 It's written in objective-c
