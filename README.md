@@ -1,7 +1,7 @@
 NewFile-OSX
 ===========
 
-Tiny app that sits in your Finder toolbar and makes new files for you
+Tiny app that sits in your Finder toolbar and makes new files for you.
 It's written in objective-c
 
 By Calum Knott
