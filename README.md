@@ -1,7 +1,13 @@
 NewFile-OSX
 ===========
 
+<<<<<<< HEAD
+A Tiny app that sits in your Finder toolbar and makes new files for you.
+=======
+<img src="https://raw.github.com/calumk/NewFile-OSX/master/logo.png" width="200px"  />
+
 Tiny app that sits in your Finder toolbar and makes new files for you.
+>>>>>>> adbce5b1e50d553e23fe03777383705d4658adfa
 It's written in objective-c
 
 By Calum Knott

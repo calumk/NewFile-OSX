@@ -28,25 +28,49 @@
         // There is no opened window or an error occured
     } else {
         // what was retrieved by the script
-        NSLog([descriptor stringValue]);
+
      
         //make a file name to write the data to using the documents directory:
-        NSString *fileName = [NSString stringWithFormat:@"%@/aNewFile",
+        NSString *fileName = [NSString stringWithFormat:@"%@aNewFile.temp",
                               [descriptor stringValue]];
         //create content - four lines of text
         NSString *content = @"";
         //save content to the documents directory
-        [content writeToFile:fileName
-                  atomically:NO
-                    encoding:NSStringEncodingConversionAllowLossy
-                       error:nil];
-       
+        BOOL success = [content writeToFile:fileName
+                atomically:YES
+                encoding:NSStringEncodingConversionAllowLossy
+                error:nil];
         
+       
+        // bring finder to the front
         NSAppleScript *script = [[NSAppleScript alloc] initWithSource:
                                  @"tell application \"System Events\" to set frontmost of process \"Finder\" to true"];
         NSDictionary *errors = nil;
         NSAppleEventDescriptor *descriptor = [script executeAndReturnError:&errors];
-        NSLog([descriptor stringValue]);
+   
+        
+        
+        
+        NSString *script4 =[NSString stringWithFormat:@"tell application \"Finder\" to reveal %@",fileName];
+        NSLog(script4);
+        // bring finder to the front
+        NSAppleScript *script2 = [[NSAppleScript alloc] initWithSource: script4];
+        
+        NSDictionary *errors2 = nil;
+        NSAppleEventDescriptor *descriptor2 = [script2 executeAndReturnError:&errors2];
+        
+        
+        // press enter to start the renaming process
+        CGEventRef event;
+        event = CGEventCreateKeyboardEvent (NULL, (CGKeyCode)36, true);
+        CGEventPost(kCGSessionEventTap, event);
+        CFRelease(event);
+        
+        
+        // pointless error check to remove error warning.
+        if ((errors != nil) || (descriptor == nil)){}
+        
+        // terminate the program
         [[NSApplication sharedApplication] terminate:nil];
     }
     
