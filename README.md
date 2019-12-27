@@ -29,6 +29,6 @@ NO error checking is performed and If an existing file called 'aNewFile' is in t
 
 Also, there is currently no App Icon, If anyone wants to contribute one, then please email me: calum (at) calumk.com
 
-###Changes:
-Version 1.0 (1/12/2013)
-  * Initial Commit
+
+
+Version 1.1 (27/12/2019)
