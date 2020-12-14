@@ -1,3 +1,23 @@
+**A Note from the Author**
+
+While this application may still have its uses, I now consider it to be depreciated, and i will no-longer be maintaining this program.
+
+I now recomend using the brilliant FinderMenu :
+
+https://github.com/samiyuru/custom-finder-right-click-menu
+
+I would also recomend XtraFinder :
+
+https://www.trankynam.com/xtrafinder/
+
+
+CalumK - Dec 2020
+
+-----
+
+
+
+
 NewFile-OSX
 ===========
 
@@ -11,7 +31,7 @@ It's written in objective-c
 By Calum Knott
 https://github.com/calumk/NewFile-OSX
 
-###Usage:
+### Usage:
 
 Download [Latest NewFile-OSX.zip](https://github.com/calumk/NewFile-OSX/releases/latest)
 
@@ -19,7 +39,7 @@ To install "NewFile-OSX.app" copy it to your Applications folder, and then from 
 
 To use, just click on the new button and it instantly generates a new file!
 
-###Notes:
+### Notes:
 
 The file generated is an empty file named 'aNewFile' There is no file extention
 
